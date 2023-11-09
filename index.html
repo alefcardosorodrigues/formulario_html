@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Time de Valorant</title>
 </head>
 <body>
     <h1>Time de Valorant</h1>
     <p>Formulario para montar um time de valorant</p>
     <form action="mailto:alefstarkin@gmail.com">
         <div>
-            <label>Nome:</label><input type="text" placeholder="Digite seu nome" required>
-            <p></p>
-            <label>Email: </label><input type="email" placeholder="exemplo@email.com" required>
-            <p></p>
-            <label>Joga com quantos agentes?: </label><input type="number" min="1" max="5" required>
-            <p></p>
-            <label>Qual a sua role? </label>
+            <label for="nome">Nome:</label><input type="text" placeholder="Digite seu nome" required>
+            <br/>
+            <label for="email">Email: </label><input type="email" placeholder="exemplo@email.com" required>
+            <br/>
+            <label for="agentes">Joga com quantos agentes?: </label><input type="number" min="1" max="5" required>
+            <br/>
+            <label for="role">Qual a sua role? </label>
                 <select>
-                    <option>Duelista</option>
-                    <option>Sentinela</option>
-                    <option>Controlador</option>
-                    <option>Suporte</option>
+                    <option value="duelista">Duelista</option>
+                    <option value="sentinela">Sentinela</option>
+                    <option value="controlador">Controlador</option>
+                    <option value="suporte">Suporte</option>
                 </select>
-                <p></p>
-            <label>Fale mais sobre seu estilo de jogo: </label><textarea></textarea>
-            <p></p>
+                <br/>
+            <label for="estilo">Fale mais sobre seu estilo de jogo: </label><textarea></textarea>
+            <br/>
             <input id="enviar" type="submit" value="Enviar">
             </div>
     </form>
